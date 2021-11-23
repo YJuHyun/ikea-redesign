@@ -9,4 +9,20 @@ h1{margin: 30px 0; float: left; transition-duration: 0.5s;}
 nav ul li{float: right;margin: 30px 0;transition-duration: 0.5s;}
 nav ul li a{font-size: 16px; padding: 0 35px; line-height: 30px; font-weight: bold;}
 
-footer{width: 100%; padding: 50px 0 60px; background-color: #2c3e4e;}
+footer{width: 100%; padding: 50px 0 60px; background-color: #0058ab; height: 370px;}
+footer a{color:#fff;}
+footer .wrapper{position: relative;}
+footer .leftArea{width: 30%; float: left;}
+footer .leftArea::after{content: ''; display: block; clear: both;}
+footer .leftArea > a{font-size: 32px;}
+footer .leftArea ul li{float: left; margin-top: 250px; margin-right: 10px;}
+footer .rightArea ul li{width: 175px; text-align: right;}
+footer .rightArea ul li > a{font-weight: 700;}
+footer .rightArea ul li ul{margin-top: 30px;}
+footer .rightArea ul li ul li{font-size: 12px;}
+footer .rightArea ul li ul li a{font-weight: 400; line-height: 24px;}
+footer .rightArea ul li{float: right;}
+footer .lastArea{position: absolute; width: 100%; border-top: solid 1px #fff; top: 350px; padding-top: 10px;}
+footer .lastArea p{color: #fff; font-size: 12px; float: left; font-weight: 300;}
+footer .lastArea p:last-child{text-align: right; float: right; line-height: 16px;}
+

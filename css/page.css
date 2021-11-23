@@ -17,7 +17,12 @@
 .evetSec h3{font-size: 24px; font-weight: 700; margin-bottom: 30px;text-align: center; }
 .evetSec ul{width: 1000px; height: 666.6px;;margin: 0 auto;}
 
-.evetSec ul li:after{content: ''; display: none; clear: both;}
+.evetSec ul li:after,
+.imgArea::after,
+.buyArea .alignRight ul li:after,
+.buyArea .alignRight ul::after,
+.productExplan h3::after,
+.productExplan .wrapper .middleArea ul::after{content: ''; display: none; clear: both;}
 .evetSec ul li{width: 33.33%; padding-bottom: 33.33%; float: left; transition-duration: 0.5s; position: relative; overflow: hidden;}
 .evetSec ul li:hover div{top: 0;}
 .evetSec ul li div{background-color: rgba(0, 0, 0, 0.6); width: 100%;;height: 100%; color: #e3e3e3; position: absolute; padding: 30px; box-sizing: border-box; text-align: right; top:100% ;transition-duration: 0.5s;}
@@ -43,9 +48,73 @@
 .productSec .tabArea div.active{display: block;}
 .productSec .tabArea ul{height: 405.5px;}
 .productSec .tabArea li{float: left; width: 22.75%; height: 350px; text-align: left;}
-.productSec .tabArea li:not(:last-of-type){margin-left: 3%;}
+.productSec .tabArea li:not(:last-of-type){margin-right: 3%;}
 .productSec .tabArea li img{width: 100%; height: 100%; object-fit: cover; margin-bottom: 20px;}
 .productSec .tabArea li dt{font-weight: 700; line-height: 30px;}
 .productSec .tabArea li dd{font-size: 14px; color: #666; line-height: 18px;}
 .productSec .tabArea li p{text-align: right; font-size: 18px;}
 .productSec .tabArea li p span{font-size: 12px; color: #666;}
+
+/* main fin */
+
+.buySec{overflow: auto;}
+.productClass{color: #666; font-size: 14px; padding-top: 100px; margin-bottom: 50px;}
+.imgArea{float: left; margin-right: 30px; position: relative;}
+.imgArea img{width: 500px; height: 500px;}
+
+.buyArea h3{font-size: 24px; font-weight: 700; line-height: 36px;}
+.buyArea > p{font-size: 20px; font-weight: 400; color: #666; margin-bottom: 210px;}
+
+.buyArea .alignRight{position: relative;}
+.buyArea .alignRight ul{position: absolute; right: 0;}
+.buyArea .alignRight ul li{width: 45px; height: 45px; float: left; position: relative;}
+.buyArea .alignRight ul li img{border-radius: 50%; overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.buyArea .alignRight ul li img:hover{border: 5px solid #eaeaea; border-radius: 50%;}
+.buyArea .alignRight > *{text-align: right;}
+.buyArea .alignRight p{font-size: 36px; font-weight: 700; position: absolute; right: 5px; top: 50px;}
+.buyArea .alignRight p span{font-size: 24px; color: #666;}
+.buyArea .alignRight input[type="button"]{border: none; border-radius: 50px; padding: 10px 40px 10px 50px; font-size: 24px; font-weight: 700; background-color: #000; color: #fff; letter-spacing: 10px; position:absolute; top:100px; right: 0;}
+
+/* buy fin */
+
+.productExplan .topArea{overflow: hidden; border-bottom: 2px solid #000; margin-bottom: 15px;}
+.productExplan h3{line-height: 55px; font-size: 28px; font-weight: 700; float: left;}
+.productExplan .downBtn{float: right; vertical-align: middle; line-height: 55px; border: none; background-color: #fff;}
+.productExplan figure img{width: 415px; float: left;}
+.productExplan figure figcaption{font-size: 20px; line-height: 36px; font-weight: 700;}
+.productExplan figure figcaption ul li{float: left; margin-right: 20px;}
+.productExplan .middleArea{overflow: hidden; margin-bottom: 100px; text-align: right;}
+.productExplan .middleArea ul{float: right; width: 300px; font-size: 20px; font-weight: 700;}
+.productExplan .middleArea ul li:first-of-type{line-height: 50px;}
+.productExplan .middleArea ul li dl{font-size: 16px; line-height: 20px; font-weight: 500;}
+.productExplan .middleArea ul li dd{color: #666; font-weight: 400;}
+.productExplan .bottomArea p{font-size: 16px; line-height: 20px;}
+
+.productExplan .totalArea{overflow: hidden; height: 0; transition-duration: 0.7s;}
+.productExplan .heightCg{height: 415px;}
+/* productExplan fin */
+
+
+.slideaddH3 h3{text-align: center; font-size: 30px; font-weight: 700; margin-top: 50px;}
+.slideSec{position: relative; width: 1400px; height: 450px; margin: 50px auto; overflow: hidden;}
+.slideSec .slides{position: absolute; transition-duration: 0.5s; left: 0;}
+.slideSec li{float: left; width: 320px; height: 320px; text-align: left;}
+.slideSec li:not(:last-of-type){margin-right: 40px;}
+.slideSec li img{width: 100%; height: 100%; object-fit: cover; margin-bottom: 20px;}
+.slideSec li dt{font-weight: 700; line-height: 30px;}
+.slideSec li dd{font-size: 14px; color: #666; line-height: 18px;}
+.slideSec li p{text-align: right; font-size: 18px;}
+.slideSec li p span{font-size: 12px; color: #666;}
+
+.slideSec .backBar{position: absolute; border-top: 1px solid #666; width: 1400px; text-indent: -9999px; top: 440px;}
+.slideSec .frontBar{position: absolute; border-top: 3px solid #000; width: 100px; text-indent: -9999px; top: 439px; transition-duration: 0.5s; left: 0;}
+.slideSec .control .prev{position: absolute; top: 160px; left: 0; transform: rotate(90deg);}
+.slideSec .control .next{position: absolute; top: 160px; right: 0; transform: rotate(270deg);}
+/* slideSec fin */
+
+.eventPage{width: 100%; height: 3400px; background: url(../img/eventbg.jpg) no-repeat center/cover; padding: 300px 0; position: relative;}
+.eventPage .textHeight{width: 100%;font-size: 72px; font-weight: 700; text-align: center; transition-duration: 1.5s; position: absolute; left: 50%; transform: translateX(-50%); top: 300px; opacity: 0;}
+.eventPage .textHeight.ani{opacity: 1; transform: translateX(-50%) translateY(100px);}
+.eventPage .textHeight span{color: #fff;}
+
+.stop-scrolling{height: 100%; overflow: hidden;}
